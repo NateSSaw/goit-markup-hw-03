@@ -31,7 +31,6 @@
 
 
 body {
-    
     background-color: var(--main-background-color);
     color: var(--primary-text-color);
 
@@ -158,12 +157,9 @@ header {
 }
 
 .container {
-    margin-bottom: 94px;
     margin-left: auto;
-    margin-left: auto;
+    margin-right: auto;
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .section .section-title {
