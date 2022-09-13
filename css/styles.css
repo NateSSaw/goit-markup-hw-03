@@ -324,7 +324,7 @@ header {
 
 .card img {
     display: block;
-    max-width: 100^;
+    max-width: 100%;
 }
 
 .card .bottom-card {
@@ -475,6 +475,7 @@ address .contacts {
 
 .cards img {
     display: block;
+    max-width: 100%;
 }
 
 .cards .bottom-cards {
