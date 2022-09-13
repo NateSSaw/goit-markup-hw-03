@@ -409,6 +409,7 @@ address .contacts {
 .container.portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: var(--main-background-color);
 }
 
 .container .filters {
