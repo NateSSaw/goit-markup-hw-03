@@ -129,6 +129,7 @@ header {
 
 .header-email,
 .header-tel {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -218,9 +219,9 @@ header {
     overflow: hidden;
 }
 
-.section .feature,
-.section .direction {
-    background-color: var(--main-background-color);
+.section.feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section .section-title {
@@ -243,8 +244,7 @@ header {
 .section .features {
     margin-bottom: 0;
     margin-top: 0;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    
 
 }
 
@@ -274,11 +274,15 @@ header {
 
 /* Чим ми займаємося */
 
+.section.direction {
+    padding-bottom: 94px;
+}
+
 .container .directions {
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 94px;
+    
 }
 
 .directions .item {
@@ -296,7 +300,7 @@ header {
 
 /* Наша команда */
 
-.section .people {
+.section.people {
     padding-top: 94px;
     padding-bottom: 94px;
     margin-top: 0;
@@ -359,8 +363,6 @@ header {
 footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
     background-color: var(--section-background-color);
 }
 
@@ -385,9 +387,12 @@ address .contacts {
 
 }
 
+.contacts .item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
 .contacts .map {
     display: inline-block;
-    margin-bottom: 9px;
 
     color: var(--focus-color);
     text-decoration: none;
@@ -395,7 +400,6 @@ address .contacts {
 
 .contacts .mail {
     display: inline-block;
-    margin-bottom: 9px;
 }
 
 .contacts .mail,
@@ -406,10 +410,9 @@ address .contacts {
 
 /* Стилі Портфоліо */
 
-.container.portfolio {
+.section.portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--main-background-color);
 }
 
 .container .filters {
@@ -419,7 +422,7 @@ address .contacts {
     margin-bottom: 50px;
 }
 
-.filters .filters-button {
+.filters .item:not(:last-child) {
     margin-right: 8px;
 }
 
